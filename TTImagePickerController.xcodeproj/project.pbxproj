@@ -15,6 +15,8 @@
 		EB122CAE1CBBBB5F0074E2D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB122CAC1CBBBB5F0074E2D9 /* LaunchScreen.storyboard */; };
 		EB122CB91CBBBB5F0074E2D9 /* TTImagePickerControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB122CB81CBBBB5F0074E2D9 /* TTImagePickerControllerTests.m */; };
 		EB122CC41CBBBB5F0074E2D9 /* TTImagePickerControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB122CC31CBBBB5F0074E2D9 /* TTImagePickerControllerUITests.m */; };
+		EB53D1941CC0B2C600F2C341 /* TTImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB53D1911CC0B2C600F2C341 /* TTImagePickerController.m */; };
+		EB53D1951CC0B2C600F2C341 /* UIAlertController+TTExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = EB53D1931CC0B2C600F2C341 /* UIAlertController+TTExtend.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		EB122CBF1CBBBB5F0074E2D9 /* TTImagePickerControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TTImagePickerControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB122CC31CBBBB5F0074E2D9 /* TTImagePickerControllerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTImagePickerControllerUITests.m; sourceTree = "<group>"; };
 		EB122CC51CBBBB5F0074E2D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB53D1901CC0B2C600F2C341 /* TTImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTImagePickerController.h; sourceTree = "<group>"; };
+		EB53D1911CC0B2C600F2C341 /* TTImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTImagePickerController.m; sourceTree = "<group>"; };
+		EB53D1921CC0B2C600F2C341 /* UIAlertController+TTExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+TTExtend.h"; sourceTree = "<group>"; };
+		EB53D1931CC0B2C600F2C341 /* UIAlertController+TTExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+TTExtend.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		EB122C9D1CBBBB5F0074E2D9 /* TTImagePickerController */ = {
 			isa = PBXGroup;
 			children = (
+				EB53D18F1CC0B2C600F2C341 /* TTImagePickerController */,
 				EB122CA11CBBBB5F0074E2D9 /* AppDelegate.h */,
 				EB122CA21CBBBB5F0074E2D9 /* AppDelegate.m */,
 				EB122CA41CBBBB5F0074E2D9 /* ViewController.h */,
@@ -138,6 +145,17 @@
 				EB122CC51CBBBB5F0074E2D9 /* Info.plist */,
 			);
 			path = TTImagePickerControllerUITests;
+			sourceTree = "<group>";
+		};
+		EB53D18F1CC0B2C600F2C341 /* TTImagePickerController */ = {
+			isa = PBXGroup;
+			children = (
+				EB53D1901CC0B2C600F2C341 /* TTImagePickerController.h */,
+				EB53D1911CC0B2C600F2C341 /* TTImagePickerController.m */,
+				EB53D1921CC0B2C600F2C341 /* UIAlertController+TTExtend.h */,
+				EB53D1931CC0B2C600F2C341 /* UIAlertController+TTExtend.m */,
+			);
+			path = TTImagePickerController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,7 +288,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB53D1951CC0B2C600F2C341 /* UIAlertController+TTExtend.m in Sources */,
 				EB122CA61CBBBB5F0074E2D9 /* ViewController.m in Sources */,
+				EB53D1941CC0B2C600F2C341 /* TTImagePickerController.m in Sources */,
 				EB122CA31CBBBB5F0074E2D9 /* AppDelegate.m in Sources */,
 				EB122CA01CBBBB5F0074E2D9 /* main.m in Sources */,
 			);
@@ -498,6 +518,7 @@
 				EB122CCA1CBBBB5F0074E2D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB122CCB1CBBBB5F0074E2D9 /* Build configuration list for PBXNativeTarget "TTImagePickerControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +527,7 @@
 				EB122CCD1CBBBB5F0074E2D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB122CCE1CBBBB5F0074E2D9 /* Build configuration list for PBXNativeTarget "TTImagePickerControllerUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +536,7 @@
 				EB122CD01CBBBB5F0074E2D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

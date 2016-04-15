@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
-
-@interface ViewController ()
+#import "TTImagePickerController.h"
+#import "UIAlertController+TTExtend.h"
+@interface ViewController ()<TTImagePickerControllerDelegate>
 
 @end
 
@@ -16,12 +17,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)Click:(UIButton *)sender {
+    TTImagePickerController* VC=[[TTImagePickerController alloc]init];
+    VC.delegates=self;
+    [self.view addSubview:VC.view];
+    [VC  addactioonshet];//提示框
+    
 }
+
+
+/**
+ *  选择图片完成
+ *
+ *  @param Controller
+ *  @param image
+ */
+-(void)TTImagePickerController:(TTImagePickerController*)Controller selectedimage:(UIImage*)image
+{
+    
+}
+
 
 @end
